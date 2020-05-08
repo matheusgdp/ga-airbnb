@@ -1,0 +1,16 @@
+{
+  "name": "gama-airbnb",
+  "version": "1.0.0",
+  "description": "airbnb clone",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "compile:sass": "node-sass sass/main.scss css/style.css -w"
+  },
+  "author": "Matheus Guimarães <matheusdepaul@hotmail.com>",
+  "license": "MIT",
+  "dependencies": {},
+  "devDependencies": {
+    "node-sass": "^4.14.1"
+  }
+}
