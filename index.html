@@ -1,22 +1,59 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link href="https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+
+    <script src="https://kit.fontawesome.com/4844619756.js" crossorigin="anonymous"></script> <!-- fontawesome -->
+
     <title>gamabnb</title>
 </head>
+
 <body>
-    
+
     <header>
-        
+        <nav>
+            <div class="logo">
+                <div class="logo-image">
+                    <img src="./img/airbngama.png" alt="">
+                </div>
+                <div class="texto">
+                    <span>gamabnb</span>
+                </div>
+            </div>
+        </nav>
     </header>
 
-    <main>
+    <div class="card-forms">
+        <form class="forms">
+            <div class="local">
+                <label for="">Localização</label>
+                <input name="local" type="text">
+            </div>
+            <div class="checkin">
+                <label for="checkink">Checkin</label>
+                <input name="checkin" type="date">
+            </div>
+            <div class="checkout">
+                <label for="checkout">Checkout</label>
+                <input name="checkout" type="date">
+            </div>
+            <button id="btn"><i class="fas fa-search"></i>Buscar</button>
+        </form>
+    </div>
 
-    </main>
-    
+    <div class="card-list">
+        
+    </div>
     <footer>
-
+        
     </footer>
+
+    <script src="./js/app.js"></script>
 </body>
+
 </html>

@@ -1,0 +1,106 @@
+$primary-color: #05be30;
+$secundary-color: #ddd;
+
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+nav {
+    height: 100px;
+    display: flex;
+    align-items: center;
+    box-shadow: 0px 0px 10px 0px $secundary-color;
+    .logo {
+        display: flex;
+        align-items: center;
+        padding: 10px;
+        margin-left: 20px;
+        &-image {
+            img {
+                height: 60px;
+                width: 60px;
+            }
+        }
+
+        .texto {
+            margin-left: 10px;
+            span {
+                font-size: 30px;
+                font-weight: 700;
+                color: $primary-color;
+            }
+        }
+    }
+}
+
+.card-forms {
+    display: flex;
+    justify-content: center;
+    form {
+        padding: 20px;
+        margin-top: 50px;
+        border: thin solid $secundary-color;
+        width: 80vw;
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(200px, 300px));
+        justify-content: center;
+        gap: 10px;
+
+        .local,
+        .checkin,
+        .checkout {
+            display: flex;
+            flex-direction: column;
+        }
+        label {
+            margin-top: 5px;
+        }
+        input {
+            height: 30px;
+            border: thin solid #ddd;
+            border-radius: 5px;
+            padding: 5px;
+        }
+
+        button {
+            height: 40px;
+            width: 100px;
+            background-color: #fff;
+            border-radius: 5px;
+            border: 1px solid $primary-color;
+            margin-top: 10px;
+
+            &:hover {
+                color: #fff;
+                background-color: $primary-color;
+                transition: .5s;
+            }
+        }
+    }
+}
+
+.card-list {
+    margin-top: 50px;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 300px));
+    justify-content: space-around;
+
+    .card {
+        
+        margin-top: 20px;
+        padding: 20px;
+        border: thin solid $secundary-color;
+        border-radius: 5px;
+
+        img {
+            width: 100%;
+            height: 180px;
+            object-fit: cover;
+        }
+    }
+
+}
